@@ -1,4 +1,5 @@
-<div>
+<x-layout>
+
     <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
     <!-- This is the job index page where you can list all jobs -->
     <h1>Job Listings</h1>
@@ -12,10 +13,6 @@
             <h2>{{ $job['company'] }}</h2>
             <p>{{ $job['description'] }}</p>
             <p>{{ $job['location'] }}</p>
-
-
         </div>
     @endforeach
-
-
-</div>
+</x-layout>
